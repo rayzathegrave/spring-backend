@@ -17,10 +17,6 @@ public class Reading {
 
     public Reading() {}
 
-    public Reading(String temperature) {
-        this.temperature = temperature;
-        this.timestamp = LocalDateTime.now();
-    }
 
     public Reading(LocalDateTime timestamp, String temperature) {
         this.timestamp = timestamp;
@@ -30,6 +26,11 @@ public class Reading {
     //toegevoegd voor testen
     public LocalDateTime getTimestamp() {
         return timestamp;
+    }
+
+    public Reading(String temperature) {
+        this.temperature = temperature;
+        this.timestamp = LocalDateTime.now();
     }
 
     public String getTemperature() {
