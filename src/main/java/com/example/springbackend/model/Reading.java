@@ -27,6 +27,7 @@ public class Reading {
         this.temperature = temperature;
     }
 
+    //toegevoegd voor testen
     public LocalDateTime getTimestamp() {
         return timestamp;
     }
